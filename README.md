@@ -1,27 +1,27 @@
 # Contiguous Sequential Pattern Mining in Text Data
-📋 Project Overview
+## 📋 Project Overview
 This project implements an efficient algorithm for mining contiguous sequential patterns from text data, specifically applied to a corpus of 10,000 stemmed Yelp reviews. The algorithm identifies meaningful phrase candidates that appear consecutively across multiple reviews with a minimum support threshold of 0.01 (100 occurrences).
 
-🎯 Algorithm Implementation
+## 🎯 Algorithm Implementation
 Core Approach
 The implementation uses a breadth-first search strategy to efficiently discover contiguous sequential patterns of increasing length:
 
-Initialization: Identifies all frequent single words (length-1 patterns)
+1. Initialization: Identifies all frequent single words (length-1 patterns)
 
-Pattern Extension: Iteratively extends existing patterns by one word while maintaining contiguity
+2. Pattern Extension: Iteratively extends existing patterns by one word while maintaining contiguity
 
-Support Counting: Uses sequence-level counting where each pattern is counted at most once per review
+3. Support Counting: Uses sequence-level counting where each pattern is counted at most once per review
 
-Pruning: Eliminates candidate patterns that fall below the minimum support threshold
+4. Pruning: Eliminates candidate patterns that fall below the minimum support threshold
 
 Key Features
-Contiguous Pattern Mining: Ensures all elements in discovered patterns appear consecutively in the original text
+- Contiguous Pattern Mining: Ensures all elements in discovered patterns appear consecutively in the original text
 
-Efficient Counting: Uses sequence IDs to avoid redundant counting of multiple occurrences in the same review
+- Efficient Counting: Uses sequence IDs to avoid redundant counting of multiple occurrences in the same review
 
-Progressive Extension: Builds longer patterns from verified shorter ones, minimizing unnecessary computations
+- Progressive Extension: Builds longer patterns from verified shorter ones, minimizing unnecessary computations
 
-Comprehensive Output: Includes all patterns from length 1 to maximum supported length
+- Comprehensive Output: Includes all patterns from length 1 to maximum supported length
 
 🛠 Technical Implementation
 Data Structures
