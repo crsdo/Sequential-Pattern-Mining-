@@ -52,12 +52,10 @@ The algorithm successfully mines contiguous sequential patterns from the Yelp re
 Output Format
 Patterns are written to patterns.txt in the format:
 ```
-text
 support:item_1;item_2;item_3
 ```
 Example:
 ```
-text
 133:parking;lot
 215:good;service
 ```
