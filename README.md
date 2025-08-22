@@ -1,4 +1,4 @@
-Contiguous Sequential Pattern Mining in Text Data
+# Contiguous Sequential Pattern Mining in Text Data
 📋 Project Overview
 This project implements an efficient algorithm for mining contiguous sequential patterns from text data, specifically applied to a corpus of 10,000 stemmed Yelp reviews. The algorithm identifies meaningful phrase candidates that appear consecutively across multiple reviews with a minimum support threshold of 0.01 (100 occurrences).
 
